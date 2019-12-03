@@ -1,13 +1,20 @@
 package ams.Spices
 
 fun main() {
-    val curry = Curry("degi mirach", "hot")
+    val curry = createCurry("degi mirach", "hot")
     curry.grind()
     val spices = arrayOf(
         SpiceContainer(curry),
-        SpiceContainer(Curry("sambhara miraachi", "mild"))
+        SpiceContainer(
+            createCurry(
+                "sambhara miraachi",
+                "mild",
+                RedSpiceColor
+            )
+        )
     )
     spices.forEach {
         println("Spice name: ${it.label}")
+        it.spice.grind()
     }
 }

@@ -1,7 +1,14 @@
 package ams.Spices
 
+enum class Color(val rgb: Int) {
+    RED(0xFF0000),
+    GREEN(0x00FF00),
+    BLUE(0x0000FF),
+    YELLOW(0xFFFF00);
+}
+
 interface SpiceColor {
-    var color: String
+    val color: Color
 }
 
 abstract class Spice(
@@ -16,18 +23,21 @@ abstract class Spice(
     abstract fun prepareSpice()
 
     companion object {
-        val levelName: ArrayList<String>
-            get() = arrayListOf(
-                "bland",
-                "mild",
-                "hot",
-                "kiss-my-ass"
-            )
+        val levelName: ArrayList<String> = arrayListOf(
+            "bland",
+            "mild",
+            "hot",
+            "kiss-my-ass"
+        )
     }
 }
 
 object YellowSpiceColor : SpiceColor {
-    override var color: String = "yellow"
+    override val color: Color = Color.YELLOW
+}
+
+object RedSpiceColor : SpiceColor {
+    override val color: Color = Color.RED
 }
 
 interface Grinder {
@@ -59,6 +69,14 @@ class Curry(
     }
 }
 
-data class SpiceContainer(val spice: Spice) {
+data class SpiceContainer(val spice: Curry) {
     val label = spice.name
+}
+
+fun createCurry(
+    name: String,
+    spiciness: String,
+    color: SpiceColor = YellowSpiceColor
+): Curry {
+    return Curry(name, spiciness, color)
 }
