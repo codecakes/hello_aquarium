@@ -1,5 +1,8 @@
 package ams.kmp
 
+/**
+ * main function. just testing for now :-)
+ */
 fun main() {
     val testlist: List<Char> = listOf('a', 'a', 'b', 'a', 'a', 'b', 'a', 'a', 'a')
     val pattern = listOf<Char>('a', 'a', 'b')

@@ -18,6 +18,10 @@ class Kmp(private val txt: List<Char>, private val pat: List<Char>) : Search {
             lpsSet = value
         }
 
+    /**
+     * Gets the Longest prefix suffix list.
+     * @see ams.kmp.Kmp.populateLps
+     */
     val getLps: List<Int>
         get() = lps
 
@@ -30,6 +34,11 @@ class Kmp(private val txt: List<Char>, private val pat: List<Char>) : Search {
         }
     }
 
+    /**
+     * Populates Longest prefix suffix list.
+     * Sets isLpsSet to true once successfully complete.
+     * @author @codecakes
+     */
     val populateLps = {
         var j = 0
         if (n > 1) {
