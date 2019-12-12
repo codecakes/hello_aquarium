@@ -5,7 +5,7 @@ internal interface Search {
 }
 
 
-class Kmp(txt: List<Char>, private val pat: List<Char>) : Search {
+class Kmp(private val txt: List<Char>, private val pat: List<Char>) : Search {
     private val txtLen: Int = txt.size
     private val n: Int = pat.size
     private val lps = (1..n).map { 0 }.toMutableList()
@@ -53,15 +53,15 @@ class Kmp(txt: List<Char>, private val pat: List<Char>) : Search {
         return when {
             txtIdx == txtLen -> return result
             patIdx == this.n -> kmpSearch(txtIdx, lps[patIdx.dec()], result + listOf<Int>(txtIdx - patIdx))
-            patIdx == txtIdx -> kmpSearch(txtIdx.inc(), patIdx.inc(), result)
-            (patIdx != txtIdx) && (patIdx != 0) -> kmpSearch(txtIdx, lps[patIdx.dec()], result)
+            pat[patIdx] == txt[txtIdx] -> kmpSearch(txtIdx.inc(), patIdx.inc(), result)
+            (pat[patIdx] != txt[txtIdx]) && (patIdx != 0) -> kmpSearch(txtIdx, lps[patIdx.dec()], result)
             else -> kmpSearch(txtIdx.inc(), patIdx, result)
         }
     }
 
     override fun search(): MutableList<Int?> {
         if (!isLpsSet) throw Exception("First initialize by running populateLps")
-        return if (result.isNotEmpty()) {
+        return if (result.isEmpty()) {
             result.addAll(kmpSearch())
             result
         } else result
