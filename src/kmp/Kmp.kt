@@ -4,8 +4,34 @@ internal interface Search {
     fun search(): MutableList<Int?>
 }
 
+/**
+ * A Floor interface for floor operations for ADTs.
+ * A floor interface generic enough for Any type.
+ *
+ * @param TYPE_1 [Any] A parameter of Any comparable type.
+ * @param TYPE_2 [Any] A parameter of Any comparable type.
+ */
+interface Floor<TYPE_1 : Any, TYPE_2 : Any> {
+    /**
+     * Compare and yield the maximum value out of two params.
+     *
+     * @param resultList T a value of any type T.
+     * @param newVal T a value of any type T.
+     * @return maximum value out of T in some subtype of Any.
+     */
+    fun maxValOf(resultList: TYPE_1, newVal: TYPE_2): Any
+}
 
-class Kmp(private val txt: List<Char>, private val pat: List<Char>) : Search {
+/**
+ * Knuth Morris Pratt String pattern search.
+ *
+ * @property txt List [Char] list of characters of a string to search.
+ * @property pat List [Char] the substring pattern to search for in txt.
+ */
+class Kmp(
+    private val txt: List<Char>,
+    private val pat: List<Char>
+) : Search, Floor<MutableList<Int>, Int> {
     private val txtLen: Int = txt.size
     private val n: Int = pat.size
     private val lps = (1..n).map { 0 }.toMutableList()
@@ -40,8 +66,8 @@ class Kmp(private val txt: List<Char>, private val pat: List<Char>) : Search {
      * @author @codecakes
      */
     val populateLps = {
-        var j = 0
         if (n > 1) {
+            var j = 0
             pat.forEachIndexed { index, s ->
                 if (index > 0) {
                     reAdjustLps(s, index, j).let {
@@ -57,7 +83,7 @@ class Kmp(private val txt: List<Char>, private val pat: List<Char>) : Search {
     private fun kmpSearch(
         txtIdx: Int = 0,
         patIdx: Int = 0,
-        result: List<Int> = listOf<Int>()
+        result: List<Int> = listOf()
     ): List<Int> {
         return when {
             txtIdx == txtLen -> return result
@@ -75,5 +101,13 @@ class Kmp(private val txt: List<Char>, private val pat: List<Char>) : Search {
             result
         } else result
     }
+
+    override fun maxValOf(
+        resultList: MutableList<Int>,
+        newVal: Int
+    ): Int {
+        return resultList.filter { it <= newVal }.max() ?: -1
+    }
+
 
 }
