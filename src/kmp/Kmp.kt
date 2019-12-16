@@ -94,6 +94,9 @@ class Kmp(
         }
     }
 
+    /**
+     * @return MutableList of indices where subpattern matches.
+     */
     override fun search(): MutableList<Int?> {
         if (!isLpsSet) throw Exception("First initialize by running populateLps")
         return if (result.isEmpty()) {
@@ -106,7 +109,7 @@ class Kmp(
         resultList: MutableList<Int>,
         newVal: Int
     ): Int {
-        return resultList.filter { it < newVal }.max() ?: -1
+        return resultList.filter { it <= newVal }.max() ?: -1
     }
 
 
