@@ -106,7 +106,7 @@ class Kmp(
         resultList: MutableList<Int>,
         newVal: Int
     ): Int {
-        return resultList.filter { it <= newVal }.max() ?: -1
+        return resultList.filter { it < newVal }.max() ?: -1
     }
 
 

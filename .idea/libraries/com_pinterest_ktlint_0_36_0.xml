@@ -1,0 +1,77 @@
+<component name="libraryTable">
+  <library name="com.pinterest:ktlint:0.36.0" type="repository">
+    <properties maven-id="com.pinterest:ktlint:0.36.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-0.36.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-core-0.36.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ec4j-core-0.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-reporter-checkstyle-0.36.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-reporter-json-0.36.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-reporter-html-0.36.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-reporter-plain-0.36.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-ruleset-experimental-0.36.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-ruleset-standard-0.36.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-test-0.36.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/assertj-core-3.12.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-stdlib-1.3.60.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-stdlib-common-1.3.60.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/annotations-13.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-compiler-embeddable-1.3.60.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-script-runtime-1.3.60.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-reflect-1.3.60.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-daemon-embeddable-1.3.60.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/trove4j-1.0.20181211.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/klob-0.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/picocli-3.9.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-0.36.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-core-0.36.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ec4j-core-0.2.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-reporter-checkstyle-0.36.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-reporter-json-0.36.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-reporter-html-0.36.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-reporter-plain-0.36.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-ruleset-experimental-0.36.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-ruleset-standard-0.36.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-test-0.36.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/assertj-core-3.12.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.12-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hamcrest-core-1.3-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-stdlib-1.3.60-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-stdlib-common-1.3.60-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/annotations-13.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-compiler-embeddable-1.3.60-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-script-runtime-1.3.60-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-reflect-1.3.60-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-daemon-embeddable-1.3.60-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/trove4j-1.0.20181211-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/klob-0.2.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/picocli-3.9.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-reporter-checkstyle-0.36.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-reporter-json-0.36.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-reporter-html-0.36.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-reporter-plain-0.36.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-ruleset-experimental-0.36.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-ruleset-standard-0.36.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ktlint-test-0.36.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/assertj-core-3.12.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.12-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hamcrest-core-1.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-stdlib-1.3.60-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-stdlib-common-1.3.60-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/annotations-13.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-compiler-embeddable-1.3.60-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-script-runtime-1.3.60-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-reflect-1.3.60-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-daemon-embeddable-1.3.60-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/trove4j-1.0.20181211-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/klob-0.2.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/picocli-3.9.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
